@@ -1,9 +1,4 @@
-
-
-<div class="d-flex justify-content-between border-bottom-0">
-  <span class="btn btn-warning"><%= link_to 'Wikiboys', articles_path %></span>
-  <span class="btn btn-warning"><%= link_to "Add New Article", new_article_path %></span>
-</div>
+<%= render 'articles/header' %>
 
 <div class="container">
   <h1><%= @article.title %></h1>
