@@ -1,24 +1,61 @@
-# README
+# 🕵️‍♀️ Wikinimous
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An anonymous wiki where anyone can make a post anonymously.
 
-Things you may want to cover:
+<br>
+App home:
+   
 
-* Ruby version
+## Getting Started
+### Setup
 
-* System dependencies
+Install gems
+```
+bundle install
+```
+Install JS packages
+```
+yarn install
+```
 
-* Configuration
+### ENV Variables
+Create `.env` file
+```
+touch .env
+```
+Inside `.env`, set these variables. For any APIs, see group Slack channel.
+```
+CLOUDINARY_URL=your_own_cloudinary_url_key
+```
 
-* Database creation
+### DB Setup
+```
+rails db:create
+rails db:migrate
+rails db:seed
+```
 
-* Database initialization
+### Run a server
+```
+rails s
+```
 
-* How to run the test suite
+## Built With
+- [Rails 7](https://guides.rubyonrails.org/) - Backend / Front-end
+- [Stimulus JS](https://stimulus.hotwired.dev/) - Front-end JS
+- [Heroku](https://heroku.com/) - Deployment
+- [PostgreSQL](https://www.postgresql.org/) - Database
+- [Bootstrap](https://getbootstrap.com/) — Styling
+- [Figma](https://www.figma.com) — Prototyping
 
-* Services (job queues, cache servers, search engines, etc.)
+## Acknowledgements
+Inspired by Jane Mount's [Bibliophile](https://www.amazon.com/Bibliophile-Illustrated-Miscellany-Jane-Mount/dp/1452167230) and a story my father once told me: "Why do we keep books? ... We keep books because they remind us of the new perspectives and lessons we learned".
 
-* Deployment instructions
+## Team Members
+- [Bill Cook](https://www.linkedin.com/in/bill--cook/)
 
-* ...
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+This project is licensed under the MIT License
